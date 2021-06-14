@@ -21,7 +21,7 @@ def consider_edge((u, used1), (v, used2), w):
 q.push((w, (1, 0)))
 d[1][0] = 0
 
-while !q.empty() :
+while not q.empty() :
     (u, used) = q.pop()
     for edge in e[u]:
         (v, w) = edge
