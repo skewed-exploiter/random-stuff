@@ -10,8 +10,9 @@ clearly applying _Dijkstra's Algorithm_ on this graph will give shortest path fr
 
 ## Code
 ```python
-min_priority_queue q;
-d[n][used] = [INF, ... ]
+min_priority_queue q
+d[1..n][0..1] = INF
+vis[1..n][0..1] = False
 
 def consider_edge((u, used1), (v, used2), w):
     if d[v][used2] > d[u][used1] + w :
@@ -23,6 +24,9 @@ d[1][0] = 0
 
 while not q.empty() :
     (u, used) = q.pop()
+    if vis[u][used] :
+        continue
+    vis[u][used]=True
     for edge in e[u]:
         (v, w) = edge
         if used :
