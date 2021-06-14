@@ -5,3 +5,4 @@ Solved problems from CSES problemset
 
   11. [Flight Discount](graph/G11_flight_discount.md)
   12. [Flight Routes](graph/G13_flight_route.md)
+  13. [Investigation](graph/G18_investigation.md)
